@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(204, 43%, 93%);
+    display: grid;
+    place-items: center;
+    font-family: 'Karla', sans-serif;
+}
+.container {
+     width: 100%;
+     margin: 100px 25px;
+     max-width: 550px;
+     border-radius: 10px;
+}
+.join,.sign-up,.why-us {
+    padding: 35px;
+
+}
+.join {
+    border-radius: 10px 10px 0 0;
+    background-color: white;
+}
+h2 {
+    margin-bottom: 25px;
+    color: hsl(179, 62%, 43%);
+}
+.join p {
+    color: hsl(218, 22%, 67%);
+}
+.join h3{
+    margin-bottom: 15px;
+    color: hsl(71, 73%, 54%);
+}
+.sign-up {
+    border-radius: 0 0 0 10px;
+    background-color: hsl(179, 62%, 43%);
+}
+.why-us {
+    border-radius:0 0 10px 0;
+    background-color: hsla(179, 62%, 43%,0.6);
+}
+.bottom {
+     display: flex;
+     border-radius:0 0 10px 10px;
+     color: white;
+}
+.bottom h3 {
+    margin-bottom: 15px;
+}
+.bottom h1 {
+    display: inline;
+    margin-bottom: 15px;
+}
+.bottom p {
+    opacity: 0.8;
+    font-weight: 200;
+}
+span {
+    opacity: 0.7;
+    margin-left: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.bottom div {
+    width: 50%;
+    
+}
+button {
+    width: 100%;
+    background-color:  hsl(71, 73%, 54%);
+    padding: 10px;
+    margin-top: 20px 0;
+    border: none;
+    border-radius: 5px;
+}
+@media (max-width:550px) {
+    .bottom {
+        flex-direction: column;
+    }
+    .bottom div {
+        width: 100%;
+    }
+    .sign-up {
+        border-radius: 0 ;
+    }
+    .why-us {
+        border-radius: 0 0 10px 10px;
+    }
+    .container {
+        width: 90%;
+        margin:  25px;
+        max-width: 350px;
+        border-radius: 10px;
+   }
+}
